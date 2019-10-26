@@ -320,6 +320,12 @@ private Integer convertHexToInt(hex) {
     Integer.parseInt(hex,16)
 }
 
+// Helper function to convert hex number to integer
+private Integer convertHexToInt1(hex) {
+    Integer.parseInt(hex,16)
+}
+
+
 // Helper function to convert hex IP address into decimal dotted quad format
 private String convertHexToIP(hex) {
     [convertHexToInt(hex[0..1]),convertHexToInt(hex[2..3]),convertHexToInt(hex[4..5]),convertHexToInt(hex[6..7])].join(".")
